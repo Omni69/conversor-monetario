@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+<h1>Conversor de Moedas</h1> 
+<div class="converter-box">
+    <label for="valor"> Valor em moeda corrente:</label>
+    <input type="number" id="valor" placeholder="Digite o valor">
+    <label for="moeda">Converter para:</label>
+           <!-- Moeda de Origem -->
+<select id="moedaOrigem">
+    <option value="BRL">Real Brasileiro</option>
+    <option value="USD">Dólar</option>
+    <option value="EUR">Euro</option>
+    <option value="JPY">Iene</option>
+    <option value="ARS">Peso Argentino</option>
+    <option value="GBP">Libra Esterlina</option>
+    <option value="CHF">Franco Suíço</option>
+    <option value="CAD">Dólar Canadense</option>
+    <option value="MXN">Peso Mexicano</option>
+    <option value="RUB">Rublo Russo</option>
+    <option value="SEK">Coroa Sueca</option>
+    <option value="AUD">Dólar Australiano</option>
+    <option value="KRW">Won Sul-Coreano</option>
+    <option value="AED">Dirham dos Emirados</option>
+</select>
+
+<!-- Moeda de Destino -->
+<select id="moedaDestino">
+    <option value="BRL">Real Brasileiro</option>
+    <option value="USD">Dólar</option>
+    <option value="EUR">Euro</option>
+    <option value="JPY">Iene</option>
+    <option value="ARS">Peso Argentino</option>
+    <option value="GBP">Libra Esterlina</option>
+    <option value="CHF">Franco Suíço</option>
+    <option value="CAD">Dólar Canadense</option>
+    <option value="MXN">Peso Mexicano</option>
+    <option value="RUB">Rublo Russo</option>
+    <option value="SEK">Coroa Sueca</option>
+    <option value="AUD">Dólar Australiano</option>
+    <option value="KRW">Won Sul-Coreano</option>
+    <option value="AED">Dirham dos Emirados</option>
+</select>
+
+
+            <button onclick="converter()">Converter</button>
+
+            <div class="resultado">
+                <h3>Resultado:</h3>
+                <p id="resultado">0,00</p>
+</div>
+
+    </div>
+   
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
